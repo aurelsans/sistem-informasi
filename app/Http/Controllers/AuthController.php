@@ -13,7 +13,7 @@ class AuthController extends Controller
         return view('pagelogin');
     }
 
-    public function plogin(Request $request)
+    public function login(Request $request)
     {
         $credentials = $request->only('username', 'password');
 
@@ -23,15 +23,16 @@ class AuthController extends Controller
         }
 
         // Jika login gagal
-        return redirect()->route('plogin')->with('error', 'username atau password salah.');
+        return redirect()->route('login')->with('error', 'username atau password salah.');
     }
+
 
     public function showRegistrationForm()
     {
         return view('pageregister');
     }
 
-    public function pregister(Request $request)
+    public function register(Request $request)
     {
         // Validasi input sesuai kebutuhan
         $validatedData = $request->validate([
@@ -50,4 +51,16 @@ class AuthController extends Controller
         // Setelah berhasil mendaftar, redirect ke halaman login atau dashboard
         return redirect('/admin'); // Ganti dengan rute yang sesuai
     }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
+    }
+
 }

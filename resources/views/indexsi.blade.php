@@ -7,7 +7,7 @@
    <title>Sistem Informasi Universitas Muhammadiyah</title>
    @vite('resources/css/app.css')
    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
-   <link href="/dist/output.css" rel="stylesheet" /> 
+   <link href="/dist/output.css" rel="stylesheet" />
 
 </head>
 
@@ -78,7 +78,8 @@
                            </li>
                            <li>
                               <a href="http://103.63.25.9/"
-                                 class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">Grafik Publikasi</a>
+                                 class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">Grafik
+                                 Publikasi</a>
                            </li>
 
                         </ul>
@@ -113,7 +114,7 @@
                                  Mahasiswa</a>
                            </li>
                            <li>
-                              <a href="/kehidupank" 
+                              <a href="/kehidupank"
                                  class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">
                                  Kehidupan Kampus</a>
                            </li>
@@ -149,7 +150,7 @@
                                  CPL</a>
                            </li>
                            <li>
-                              <a href="/kurikulum" 
+                              <a href="/kurikulum"
                                  class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">
                                  Kurikulum</a>
                            </li>
@@ -184,7 +185,7 @@
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="tentang-tab">
                            <li>
-                              <a href="/sambutan" 
+                              <a href="/sambutan"
                                  class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">Sambutan
                                  Kaprodi</a>
                            </li>
@@ -203,7 +204,7 @@
                                  class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">Manajemen</a>
                            </li>
                            <li>
-                              <a href="/survey" 
+                              <a href="/survey"
                                  class="block px-4 py-2 text-left dark:hover:bg-gray-600 dark:hover:text-white">Survey</a>
                            </li>
                            <li>
@@ -238,9 +239,11 @@
                               d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
                      </div>
-                     <input type="text" id="input-group-search"
+                     <form action="{{ route('search') }}" method="GET" class="d-flex">
+                     <input type="search" name="query" id="input-group-search"
                         class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Search">
+                     </form>
                   </div>
                </div>
             </div>
@@ -543,160 +546,144 @@
                </div>
             </div>
 
-         <div class=" sm:px-2 mx-auto max-w-screen-xl mt-8">
-            <!-- fasilitas profile ----------------------------------------------------------------------------------- -->
+            <div class=" sm:px-2 mx-auto max-w-screen-xl mt-8">
+               <!-- fasilitas profile ----------------------------------------------------------------------------------- -->
                <div class="mt-8 mx-auto max-w-screen-xl">
                   <div class="px-4 mx-auto max-w-screen-xl mx-auto sm:container flex items-center">
-                     <h2 class="md:p-4 ml-0 text-cyan-800 mb-2 text-lg sm:text-3xl md:text-4xl font-bold dark:text-white mx-4">Prestasi
+                     <h2
+                        class="md:p-4 ml-0 text-cyan-800 mb-2 text-lg sm:text-3xl md:text-4xl font-bold dark:text-white mx-4">
+                        Prestasi
                         Yang Diraih</h2>
-                        <div class="flex-grow border-t-4 border-blue-100 dark:border-gray-700"></div>
+                     <div class="flex-grow border-t-4 border-blue-100 dark:border-gray-700"></div>
                   </div>
                </div>
 
                <!-- END prestasi ----------------------------------------------------------------------------------- -->
 
                <!-- desc prestasi ----------------------------------------------------------------------------------- -->
-               
-                  <div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 justify-evenly">
-@foreach($prestasi as $p)
-<div class="rounded-md overflow-hidden mt-8 bg-white sm:w-64 md:w-80 lg:w-80">
-   <img src="{{ asset('foto_prestasi/' . $p->gambar_prestasi) }}" alt="Image Caption" class="transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 w-full h-56 object-cover shadow-lg w-full"/>
-   <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2 text-slate-700">{{$p->judul_prestasi}}</div>
-      <p class="text-sm text-slate-600">{{$p->deskripsi_prestasi}}</p>
-   </div>
-</div>
-@endforeach
+
+               <div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 justify-evenly">
+                  @foreach($prestasi as $p)
+               <div class="rounded-md overflow-hidden mt-8 bg-white sm:w-64 md:w-80 lg:w-80">
+                  <img src="{{ asset('foto_prestasi/' . $p->gambar_prestasi) }}" alt="Image Caption"
+                     class="transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 w-full h-56 object-cover shadow-lg w-full" />
+                  <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2 text-slate-700">{{$p->judul_prestasi}}</div>
+                     <p class="text-sm text-slate-600">{{$p->deskripsi_prestasi}}</p>
                   </div>
+               </div>
+            @endforeach 
+               </div>
 
                <!-- END desc ----------------------------------------------------------------------------------- -->
                <!-- readmore ----------------------------------------------------------------------------------- -->
                <div class="mt-8 mb-4 px-4 mx-auto max-w-screen-xl text-center ">
-               <a href="/prestasi" type="button"  class="bg-white hover:text-blue-700 hover:bg-gray-100 py-2 text-gray-800 font-semibold w-full order border border-gray-400 rounded shadow">
-   Read More
-</a>  
+                  <a href="/prestasi" type="button"
+                     class="bg-white hover:text-blue-700 hover:bg-gray-100 py-2 text-gray-800 font-semibold w-full order border border-gray-400 rounded shadow">
+                     Read More
+                  </a>
                </div>
                <!-- END readmore ----------------------------------------------------------------------------------- -->
-           
-         </div>
+
+            </div>
 
 
-         <div class="mt-8 sm:px-2 mx-auto max-w-screen-xl">
-            <!-- fasilitas profile ----------------------------------------------------------------------------------- -->
-            <div class="mx-auto max-w-screen-xl">
+            <div class="mt-8 sm:px-2 mx-auto max-w-screen-xl">
+               <!-- fasilitas profile ----------------------------------------------------------------------------------- -->
+               <div class="mx-auto max-w-screen-xl">
                   <div class="px-4 mx-auto max-w-screen-xl mx-auto sm:container flex items-center">
-                     <h2 class="md:p-4 ml-0 text-cyan-800 mb-2 text-lg sm:text-3xl md:text-4xl font-bold dark:text-white mx-4">Fasilitas Laboratorium</h2>
-                        <div class="flex-grow border-t-4 border-blue-100 dark:border-gray-700"></div>
+                     <h2
+                        class="md:p-4 ml-0 text-cyan-800 mb-2 text-lg sm:text-3xl md:text-4xl font-bold dark:text-white mx-4">
+                        Fasilitas Laboratorium</h2>
+                     <div class="flex-grow border-t-4 border-blue-100 dark:border-gray-700"></div>
                   </div>
                </div>
 
                <!-- END fasilitas profile ----------------------------------------------------------------------------------- -->
 
                <!-- desc Fasilitas ----------------------------------------------------------------------------------- -->
-               <div
-            class=" grid px-6 gap-6 mt-8  md:grid-cols-2 lg:grid-cols-3 "
-          >
-           <!-- 1st -->
-           <article
-              class="relative flex flex-col flex-wrap transition duration-300 ease-in-out rounded-2xl group hover:shadow-xl"
-            >
-              <!-- Image -->
-              <div
-                class="relative z-10 w-full overflow-hidden aspect-w-2 aspect-h-1 rounded-t-2xl bg-gray-50"
-              >
-                <a href="/labkomp">
-                  <img
-                    class="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-t-2xl group-hover:scale-110 lazy"
-                    src="gambar/kompicon.jpg"
-                  />
-                </a>
-              </div>
-  
-              <!-- Content -->
-              <div
-                class="box-border flex flex-col justify-between flex-1 w-full p-6 transition duration-300 ease-in-out bg-white border-b-2 border-l-2 border-r-2 border-gray-100 rounded-b-2xl xl:p-7 group-hover:border-transparent"
-              >
-                <div>
-                  <a
-                    href="/labkomp"
-                    class="h5 font-bold text-xl mb-2 text-slate-700 text-lg hover:text-blue-500 transition duration-500 mt-3 leading-tight ease-in-out lg:text-xl sm:text-2xl xl:text-xl decoration-gray-800 decoration-2"
-                  >
-                    Laboratorium Komputer
-                  </a>
-  
-              </div>
-            </article>
+               <div class=" grid px-6 gap-6 mt-8  md:grid-cols-2 lg:grid-cols-3 ">
+                  <!-- 1st -->
+                  <article
+                     class="relative flex flex-col flex-wrap transition duration-300 ease-in-out rounded-2xl group hover:shadow-xl">
+                     <!-- Image -->
+                     <div class="relative z-10 w-full overflow-hidden aspect-w-2 aspect-h-1 rounded-t-2xl bg-gray-50">
+                        <a href="/labkomp">
+                           <img
+                              class="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-t-2xl group-hover:scale-110 lazy"
+                              src="gambar/kompicon.jpg" />
+                        </a>
+                     </div>
 
-             <!-- 2nd -->
-           <article
-              class="relative flex flex-col flex-wrap transition duration-300 ease-in-out rounded-2xl group hover:shadow-xl"
-            >
-              <!-- Image -->
-              <div
-                class="relative z-10 w-full overflow-hidden aspect-w-2 aspect-h-1 rounded-t-2xl bg-gray-50"
-              >
-                <a href="labjaringan">
-                  <img
-                    class="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-t-2xl group-hover:scale-110 lazy"
-                    src="gambar/labjaringan.jpg"
-                  />
-                </a>
-              </div>
-  
-              <!-- Content -->
-              <div
-                class="box-border flex flex-col justify-between flex-1 w-full p-6 transition duration-300 ease-in-out bg-white border-b-2 border-l-2 border-r-2 border-gray-100 rounded-b-2xl xl:p-7 group-hover:border-transparent"
-              >
-                <div>
-                  <a
-                    href="labjaringan"
-                    class="h5 font-bold text-xl mb-2 text-slate-700 text-lg hover:text-blue-500 transition duration-500 mt-3 leading-tight ease-in-out lg:text-xl sm:text-2xl xl:text-xl decoration-gray-800 decoration-2"
-                  >
-                    Laboratorium Jaringan
-                  </a>
-  
-              </div>
-            </article>
+                     <!-- Content -->
+                     <div
+                        class="box-border flex flex-col justify-between flex-1 w-full p-6 transition duration-300 ease-in-out bg-white border-b-2 border-l-2 border-r-2 border-gray-100 rounded-b-2xl xl:p-7 group-hover:border-transparent">
+                        <div>
+                           <a href="/labkomp"
+                              class="h5 font-bold text-xl mb-2 text-slate-700 text-lg hover:text-blue-500 transition duration-500 mt-3 leading-tight ease-in-out lg:text-xl sm:text-2xl xl:text-xl decoration-gray-800 decoration-2">
+                              Laboratorium Komputer
+                           </a>
 
-             <!-- 3rd -->
-           <article
-              class="relative flex flex-col flex-wrap transition duration-300 ease-in-out rounded-2xl group hover:shadow-xl"
-            >
-              <!-- Image -->
-              <div
-                class="relative z-10 w-full overflow-hidden aspect-w-2 aspect-h-1 rounded-t-2xl bg-gray-50"
-              >
-                <a href="labenter">
-                  <img
-                    class="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-t-2xl group-hover:scale-110 lazy"
-                    src="gambar/labent.jpg"
-                  />
-                </a>
-              </div>
-  
-              <!-- Content -->
-              <div
-                class="box-border flex flex-col justify-between flex-1 w-full p-6 transition duration-300 ease-in-out bg-white border-b-2 border-l-2 border-r-2 border-gray-100 rounded-b-2xl xl:p-7 group-hover:border-transparent"
-              >
-                <div>
-                  <a
-                    href="labenter"
-                    class="h5 font-bold text-xl mb-2 text-slate-700 text-lg hover:text-blue-500 transition duration-500 mt-3 leading-tight ease-in-out lg:text-xl sm:text-2xl xl:text-xl decoration-gray-800 decoration-2"
-                  >
-                    Laboratorium Enterprise
-                  </a>
-  
-              </div>
-            </article>
-          </div>
+                        </div>
+                  </article>
+
+                  <!-- 2nd -->
+                  <article
+                     class="relative flex flex-col flex-wrap transition duration-300 ease-in-out rounded-2xl group hover:shadow-xl">
+                     <!-- Image -->
+                     <div class="relative z-10 w-full overflow-hidden aspect-w-2 aspect-h-1 rounded-t-2xl bg-gray-50">
+                        <a href="labjaringan">
+                           <img
+                              class="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-t-2xl group-hover:scale-110 lazy"
+                              src="gambar/labjaringan.jpg" />
+                        </a>
+                     </div>
+
+                     <!-- Content -->
+                     <div
+                        class="box-border flex flex-col justify-between flex-1 w-full p-6 transition duration-300 ease-in-out bg-white border-b-2 border-l-2 border-r-2 border-gray-100 rounded-b-2xl xl:p-7 group-hover:border-transparent">
+                        <div>
+                           <a href="labjaringan"
+                              class="h5 font-bold text-xl mb-2 text-slate-700 text-lg hover:text-blue-500 transition duration-500 mt-3 leading-tight ease-in-out lg:text-xl sm:text-2xl xl:text-xl decoration-gray-800 decoration-2">
+                              Laboratorium Jaringan
+                           </a>
+
+                        </div>
+                  </article>
+
+                  <!-- 3rd -->
+                  <article
+                     class="relative flex flex-col flex-wrap transition duration-300 ease-in-out rounded-2xl group hover:shadow-xl">
+                     <!-- Image -->
+                     <div class="relative z-10 w-full overflow-hidden aspect-w-2 aspect-h-1 rounded-t-2xl bg-gray-50">
+                        <a href="labenter">
+                           <img
+                              class="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-t-2xl group-hover:scale-110 lazy"
+                              src="gambar/labent.jpg" />
+                        </a>
+                     </div>
+
+                     <!-- Content -->
+                     <div
+                        class="box-border flex flex-col justify-between flex-1 w-full p-6 transition duration-300 ease-in-out bg-white border-b-2 border-l-2 border-r-2 border-gray-100 rounded-b-2xl xl:p-7 group-hover:border-transparent">
+                        <div>
+                           <a href="labenter"
+                              class="h5 font-bold text-xl mb-2 text-slate-700 text-lg hover:text-blue-500 transition duration-500 mt-3 leading-tight ease-in-out lg:text-xl sm:text-2xl xl:text-xl decoration-gray-800 decoration-2">
+                              Laboratorium Enterprise
+                           </a>
+
+                        </div>
+                  </article>
+               </div>
                <!-- END desc fasilitas ----------------------------------------------------------------------------------- -->
                <!-- read more ----------------------------------------------------------------------------------- -->
                <div class="mt-12 mb-4 px-4 mx-auto max-w-screen-xl text-center ">
-               <a href="/laboratorium" type="button"  class="bg-white hover:text-blue-700 hover:bg-gray-100 py-2 text-gray-800 font-semibold w-full order border border-gray-400 rounded shadow">
-                  Read More</a>   
+                  <a href="/laboratorium" type="button"
+                     class="bg-white hover:text-blue-700 hover:bg-gray-100 py-2 text-gray-800 font-semibold w-full order border border-gray-400 rounded shadow">
+                     Read More</a>
                </div>
                <!-- END read more ----------------------------------------------------------------------------------- -->
-         </div>
+            </div>
       </div>
       <!-- ############### END BERANDA #################### ----------------------------------------------------------------------------------- -->
       </section>
@@ -825,12 +812,47 @@
                      </svg>
                      <span class="sr-only">YouTube account</span>
                   </a>
+                  <a href="/login" target="_blank" id="hidden-login-button" style="display: none;"
+                     class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+                     </svg>
+                     <span class="sr-only">Login Admin</span>
+                  </a>
+
                </div>
             </div>
          </div>
       </footer>
 
 
+      <script>
+      document.addEventListener('keydown', function(event) {
+         // Cek apakah CTRL+L ditekan
+         if (event.ctrlKey && event.key === 'l') {
+            event.preventDefault(); // Mencegah fungsi default dari CTRL+L
+            var hiddenButton = document.getElementById('hidden-login-button');
+            if (hiddenButton) {
+                  hiddenButton.style.display = 'block'; // Tampilkan tombol
+
+                  // Simpan status akses di session melalui AJAX
+                  fetch('{{ route("set.hidden.login.access") }}', {
+                     method: 'POST',
+                     headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                     }
+                  });
+            }
+         }
+      });
+
+      // Fungsi untuk menangani klik pada tombol tersembunyi
+      document.getElementById('hidden-login-button').addEventListener('click', function() {
+         // Arahkan ke halaman login atau lakukan tindakan login
+         window.location.href = '/login'; // Ganti dengan URL halaman login yang sesuai
+      });
+      </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>

@@ -494,7 +494,7 @@
 
             <div class="mx-auto max-w-screen-xl lg:py-8">
                <div
-                  class="py-8 px-10 mx-auto max-w-screen-xl lg:py-8 bg-white lg:border lg:border-gray-200 lg:rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  class="py-8 px-10 mx-auto lg:max-w-screen-xl lg:py-8 bg-white lg:border lg:border-gray-200 lg:rounded-lg lg:shadow dark:bg-gray-800 dark:border-gray-700">
                   <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fasilitas
                      Laboratorium yang terdapat di Program Studi Sistem Informasi:</h5>
                   <p class="font-normal text-black-700 dark:text-gray-400">

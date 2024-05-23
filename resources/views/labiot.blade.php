@@ -524,313 +524,68 @@
                      </li>
                      
                      
-                  <li class="text-body-color dark:text-dark-6 flex text-base">
+     <!-------------------------------- Pemanggilan Data ---------------------------------->
+                     
+     <li class="text-body-color dark:text-dark-6 flex text-base">
                         <div>
                             <div class="mt-4 mb-2 font-bold text-3xl text-slate-700">Spesifikasi Komputer</div>
                             </div>
                      </li>
                      
+                     @foreach ($data['spesifikasi'] as $spesifikasi)
                     <li class="text-body-color dark:text-dark-6 flex text-base">
                         <span
                            class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
                         </span>
-                            <p class="text-md text-slate-600"><b>Merek PC:</b> ASUS (16) & Lenovo (2 buah).</p>
+                            <p class="text-md text-slate-600"><b>{{ $spesifikasi->nama_spek }}:</b> {{ $spesifikasi->detail_spek }}</p>
                      </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>CPU:</b> ASUS D310MT (17 buah).</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>Processor:</b> ASUS Intel core i5-4460 & Lenovo, Intel core i3-3217U.</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>RAM:</b> 12 gb DDR3 (ASUS) & 4 gb DDR3 (Lenovo).</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>HDD:</b> 500 GB (Lenovo).</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>SSD:</b> 224 GB (ASUS).</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>DVD RW:</b> Untuk membaca dan menulis data dari dan ke DVD.</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>WiFi:</b> Untuk koneksi internet nirkabel.</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>Spesifikasi Monitor:</b> ASUS 17'' & Lenovo 17''.</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>Keyboard:</b> Genius (1 buah), A4Tech (1 buah), Logitech (2 buah), Lenovo (3 buah), ASUS (11 buah).</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                        <span
-                           class="ml-2 bg-cyan-400 mr-2 mt-2.5 flex h-2 w-full max-w-[8px] items-center justify-center rounded-full text-base">
-                        </span>
-                            <p class="text-md text-slate-600"><b>Mouse:</b> e-Smile (1 buah), A4Tech (1 buah), Logitech (2 buah), Lenovo (5 buah), ASUS (9 buah).</p>
-                     </li>
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
+                     @endforeach
+                     
+
+                    <li class="text-body-color dark:text-dark-6 flex text-base">
                         <div>
                             <div class="mt-4 mb-2 font-bold text-3xl text-slate-700">Fasilitas</div>
                             </div>
                      </li>
+
                      <div class="grid px-2 lg:grid-cols-3 gap-2 place-items-center">
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">Meja</div>
-                                <p class="text-sm mb-2 text-slate-600">Terdapat 25 buah meja dengan ukuran panjang 60 cm, lebar 120 cm, 
-                                    dan tinggi 75 cm, yang menyediakan ruang yang cukup untuk mahasiswa dan peralatan.</p>
-                            </div>
-                     </li>
-                     
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">Kursi</div>
-                                <p class="text-sm mb-2 text-slate-600">Terdapat 22 kursi merk Chitose untuk kenyamanan mahasiswa.</p>
-                            </div>
-                     </li>
-        
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">Papan Tulis & Penghapus</div>
-                                <p class="text-sm mb-2 text-slate-600">Digunakan untuk menuliskan catatan atau membuat diagram selama sesi pembelajaran atau diskusi.</p>
-                            </div>
-                     </li>
+                        @foreach ($data['fasilitas'] as $index => $fasilitas)
+                            <li class="text-body-color dark:text-dark-6 flex text-base">
+                                <span class="text-secondary mr-2.5 mt-2">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g clip-path="url(#clip0_980_24852)">
+                                            <path
+                                                d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
+                                                fill="currentColor"
+                                            />
+                                            <path
+                                                d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
+                                                fill="currentColor"
+                                            />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_980_24852">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <div class="font-bold text-lg text-slate-700">{{ $fasilitas->nama_fasil }}</div>
+                                    <p class="text-sm mb-2 text-slate-600">{{ $fasilitas->detail_fasil }}</p>
+                                </div>
+                            </li>
+                        @endforeach
+                    </div>
 
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">AC</div>
-                                <p class="text-sm mb-2 text-slate-600">AC merk Panasonic 2 buah, untuk menjaga suhu 
-                                    ruangan agar tetap nyaman.</p>
-                            </div>
-                     </li>
+        <!-------------------------------- Akhir Pemanggilan Data ---------------------------------->
 
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">Proyektor</div>
-                                <p class="text-sm mb-2 text-slate-600">Proyektor model EB X-500 untuk memproyeksikan materi 
-                                    presentasi atau pembelajaran ke layar besar.</p>
-                            </div>
-                     </li>
-
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">Rak</div>
-                                <p class="text-sm mb-2 text-slate-600">Rak yang terbuat dari kayu dengan isi 25 kotak, panjang 2 meter, dan 
-                                    lebar 1,5 meter, digunakan untuk menyimpan tas atau peralatan pribadi mahasiswa.</p>
-                            </div>
-                     </li>
-
-                     <li class="text-body-color dark:text-dark-6 flex text-base">
-                     <span class="text-secondary mr-2.5 mt-2">
-         <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <g clip-path="url(#clip0_980_24852)">
-               <path
-                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
-                  fill="currentColor"
-                  />
-               <path
-                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
-                  fill="currentColor"
-                  />
-            </g>
-            <defs>
-               <clipPath id="clip0_980_24852">
-                  <rect width="20" height="20" fill="white" />
-               </clipPath>
-            </defs>
-         </svg>
-      </span>
-                        <div>
-                            <div class="font-bold text-lg text-slate-700">CCTV</div>
-                                <p class="text-sm mb-2 text-slate-600">Sistem CCTV merk SPC untuk memantau keamanan ruangan.</p>
-                            </div>
-                     </li>
-                  
-</div>
 
                      <li class="text-body-color mt-3 dark:text-dark-6 flex text-base">
                         <div>

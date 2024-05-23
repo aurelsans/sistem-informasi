@@ -455,109 +455,36 @@
    <div class=" px-2 mx-auto max-w-screen-xl py-8">
       <!-- accordion ----------------------------------------------------------------------------------- -->
       <div id="accordion2-color" data-accordion="collapse"
-         data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
-         <h2 id="accordion2-color-heading-1">
-            <button type="button"
-               class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-               data-accordion-target="#accordion2-color-body-1" aria-expanded="true"
-               aria-controls="accordion2-color-body-1">
-               <span>Sikap</span>
-               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M9 5 5 1 1 5" />
-               </svg>
-            </button>
-         </h2>
-         <div id="accordion2-color-body-1" class="hidden" aria-labelledby="accordion2-color-heading-1">
-            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-               <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li><a>Mampu bekerja sama dan memiliki kepekaan sosial dan kepedulian yang tinggi terhadap
-                        masyarakat, dan lingkungannya.</a></li>
-                  <li><a>Memiliki moral, etika, dan kepribadian yang baik di dalam menyelesaikan tugasnya.</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <h2 id="accordion2-color-heading-2">
-            <button type="button"
-               class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-               data-accordion-target="#accordion2-color-body-2" aria-expanded="false"
-               aria-controls="accordion2-color-body-2">
-               <span>Keterampilan Umum</span>
-               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M9 5 5 1 1 5" />
-               </svg>
-            </button>
-         </h2>
-         <div id="accordion2-color-body-2" class="hidden" aria-labelledby="accordion2-color-heading-2">
-            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-               <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li><a>Mampu membuat rekomendasi dan menerapkan metodologi terbaik dalam sebuah proyek
-                        <i>software development</i>.</a></li>
-                  <li><a>Mampu menganalisa, merancang, dan mengimplementasikan suatu sistem berbasi komputer
-                        secara efisien untuk menyelesaikan masalah, menggunakan pemrograman procedural dan
-                        berorientasi objek.</a></li>
-                  <li><a>Mampu menentukan tahapan dan melakukan <i>testing</i> atau uji kelayakan suatu
-                        sistem.</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <h2 id="accordion3-color-heading-3">
-            <button type="button"
-               class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-               data-accordion-target="#accordion3-color-body-3" aria-expanded="false"
-               aria-controls="accordion3-color-body-3">
-               <span>Pengetahuan</span>
-               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M9 5 5 1 1 5" />
-               </svg>
-            </button>
-         </h2>
-         <div id="accordion3-color-body-3" class="hidden" aria-labelledby="accordion3-color-heading-3">
-            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-               <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li><a>Menguasai kaidah pengembangan perangkat lunak berbasis web dan mobile yang
-                        memenuhi standar kualitas dan keamanan.</a></li>
-                  <li><a>Menguasai konsep mencipta atau membangun rekayasa perangkat lunak, dan
-                        rekayasa data.</a></li>
-                  <li><a>Menguasai sumber daya teknologi dan platformnya untuk pengembangan aplikasi
-                        berbasis multimedia.</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <h2 id="accordion4-color-heading-4">
-            <button type="button"
-               class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-               data-accordion-target="#accordion4-color-body-4" aria-expanded="false"
-               aria-controls="accordion4-color-body-4">
-               <span>Keterampilan Khusus</span>
-               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M9 5 5 1 1 5" />
-               </svg>
-            </button>
-         </h2>
-         <div id="accordion4-color-body-4" class="hidden" aria-labelledby="accordion4-color-heading-4">
-            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-               <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li><a>Menerapkan dan mengevaluasi metode keamanan perangkat lunak.</a></li>
-                  <li><a>Mampu menganalisa dan membangun suatu sistem dengan menentukan proses
-                        bisnis sesuai kebbutuhan.</a></li>
-                  <li><a>Mampu menerapkan manajemen data, informasi, dan pengetahuan.</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
+    data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+    @foreach($capaian as $c)
+    <h2 id="accordion{{$c->id}}-color-heading-{{$loop->index + 1}}">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion{{$c->id}}-color-body-{{$loop->index + 1}}" aria-expanded="false"
+            aria-controls="accordion{{$c->id}}-color-body-{{$loop->index + 1}}">
+            <span>{{$c->judul_capaian}}</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion{{$c->id}}-color-body-{{$loop->index + 1}}" class="hidden"
+        aria-labelledby="accordion{{$c->id}}-color-heading-{{$loop->index + 1}}">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            @foreach($deskripsiCapaian as $deskripsi)
+            @if($deskripsi->capaian_id == $c->id)
+            <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                <li><a>{{$deskripsi->deskripsi}}</a></li>
+            </ul>
+            @endif
+            @endforeach
+        </div>
+    </div>
+    @endforeach
+</div>
+
 
 </section>
 </div>

@@ -459,131 +459,30 @@
 
                <!-- accordion ----------------------------------------------------------------------------------- -->
                <div id="accordion5-color" data-accordion="collapse"
-                  data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
-                  <h2 id="accordion5-color-heading-5">
-                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                        data-accordion-target="#accordion5-color-body-5" aria-expanded="true"
-                        aria-controls="accordion5-color-body-5">
-                        <span><i>Software Development</i></span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 5 5 1 1 5" />
-                        </svg>
-                     </button>
-                  </h2>
-                  <div id="accordion5-color-body-5" class="hidden" aria-labelledby="accordion5-color-heading-5">
-                     <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                           <a>Lulusan yang mampu membuat <i>Software House</i> secara mandiri di dunia IT
-                              yang
-                              dideskripsi
-                              kerjanya melakukan aktivitas <i>engineering</i> (rekayasa, analisa,
-                              implementasi,
-                              dan
-                              validasi).</a>
-                        </ul>
-                     </div>
-                  </div>
-                  <h2 id="accordion6-color-heading-6">
-                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                        data-accordion-target="#accordion6-color-body-6" aria-expanded="false"
-                        aria-controls="accordion6-color-body-6">
-                        <span><i>Analyst System</i></span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 5 5 1 1 5" />
-                        </svg>
-                     </button>
-                  </h2>
-                  <div id="accordion6-color-body-6" class="hidden" aria-labelledby="accordion6-color-heading-6">
-                     <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                           <a>Lulusan yang mampu menjadi analis sistem yang dapat bekerja dalam
-                              <i>project</i> mandiri maupun
-                              dalam suatu perusahaan industri.</a>
-                        </ul>
-                     </div>
-                  </div>
-                  <h2 id="accordion7-color-heading-7">
-                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                        data-accordion-target="#accordion7-color-body-7" aria-expanded="false"
-                        aria-controls="accordion7-color-body-7">
-                        <span>Wirausaha TI (<i>IT Entrepreneur</i>)</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 5 5 1 1 5" />
-                        </svg>
-                     </button>
-                  </h2>
-                  <div id="accordion7-color-body-7" class="hidden" aria-labelledby="accordion7-color-heading-7">
-                     <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                           <a>Lulusan memiliki kemampuan untuk berani berusaha secara mandiri dengan
-                              mengerahkan sumber
-                              daya
-                              yang ada, menentukan cara produksi, memasarkan produk, serta mengatur
-                              permodalan
-                              operasinya untuk
-                              menghasilkan sesuatu yang baru.</a>
-                        </ul>
-                     </div>
-                  </div>
-                  <h2 id="accordion8-color-heading-8">
-                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                        data-accordion-target="#accordion8-color-body-8" aria-expanded="false"
-                        aria-controls="accordion8-color-body-8">
-                        <span><i>Database Administrator</i></span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 5 5 1 1 5" />
-                        </svg>
-                     </button>
-                  </h2>
-                  <div id="accordion8-color-body-8" class="hidden" aria-labelledby="accordion8-color-heading-8">
-                     <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                           <a>Lulusan memiliki kemampuan untuk mendesain implementasi, pemeliharaan, dan
-                              perbaikan
-                              <i>database</i>, serta
-                              melakukan koordinasi dengan <i>database programmer</i> , analisis, dan sistem
-                              manager.</a>
-                        </ul>
-                     </div>
-                  </div>
+    data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+    @foreach($profesi as $pro)
+    <h2 id="accordion{{$pro->id}}-color-heading-{{$loop->index + 5}}">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion{{$pro->id}}-color-body-{{$loop->index + 5}}" aria-expanded="false"
+            aria-controls="accordion{{$pro->id}}-color-body-{{$loop->index + 5}}">
+            <span>{{$pro->nama_profesi}}</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion{{$pro->id}}-color-body-{{$loop->index + 5}}" class="hidden"
+        aria-labelledby="accordion{{$pro->id}}-color-heading-{{$loop->index + 5}}">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p>{{$pro->deskripsi_profesi}}</p>
+        </div>
+    </div>
+    @endforeach
+    </div>
 
-                  <h2 id="accordion9-color-heading-9">
-                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                        data-accordion-target="#accordion9-color-body-9" aria-expanded="false"
-                        aria-controls="accordion9-color-body-9">
-                        <span><i>IT Auditor</i></span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 5 5 1 1 5" />
-                        </svg>
-                     </button>
-                  </h2>
-                  <div id="accordion9-color-body-9" class="hidden" aria-labelledby="accordion9-color-heading-9">
-                     <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                           <a>Lulusan mampu melakukan klasifikasi kebutuhan IT, baik dari sisi arsitektur,
-                              keamanan,
-                              perencanaan, dan
-                              memberikan rekomendasi bagi pengguna sistem.</a>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
 
          </section>
       </div>

@@ -11,7 +11,7 @@
     <div class="py-6"></div>
     <div
         class="w-full max-w-lg bg-white dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow rounded-lg p-5 mx-auto">
-        <form method="post" action="{{ route('pregister') }}" class="max-w-md">
+        <form method="post" action="{{ route('register') }}" class="max-w-md">
             @csrf
             <h4 class="text-4xl mb-8 mt-2">Sign-Up</h4>
             <div class="relative z-0 w-full mb-5 group">
